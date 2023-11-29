@@ -1,0 +1,129 @@
+/* Estilo global para toda a página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a família de fontes para toda a página */
+    background-color: #000000; /* Define a cor de fundo para toda a página */
+    display: flex; /* Utiliza o modelo flexbox para o layout */
+    flex-direction: column; /* Organiza os elementos filhos em coluna */
+    align-items: center; /* Centraliza os elementos filhos horizontalmente */
+    height: 100vh; /* Define a altura do corpo para 100% da altura da viewport */
+    margin: 0; /* Remove a margem padrão para garantir que os elementos alcancem as bordas */
+}
+
+/* Estilo para um container dentro do corpo */
+.container {
+    text-align: center; /* Centraliza o texto dentro do container */
+    margin: 10px; /* Adiciona margem ao redor do container */
+    color: #f0f0f0;
+}
+
+/* Estilo para o tabuleiro do jogo */
+.board {
+    display: grid; /* Utiliza o layout em grade para o tabuleiro */
+    grid-template-columns: repeat(3, 100px); /* Cria 3 colunas, cada uma com 100px de largura */
+    grid-gap: 7px; /* Define o espaçamento entre os itens da grade */
+    margin: 15px 0; /* Adiciona margem acima e abaixo do tabuleiro */
+   
+}
+
+/* Estilo para células individuais no tabuleiro */
+.cell {
+    
+    width: 95px; /* Define a largura de cada célula */
+    height: 95px; /* Define a altura de cada célula */
+    border: 2px solid #ffffff; /* Adiciona uma borda preta de 1px a cada célula */
+    font-size: 36px; /* Define o tamanho da fonte do texto dentro de cada célula */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar o mouse sobre */
+    text-align: center; /* Centraliza o texto horizontalmente dentro de cada célula */
+    display: flex; /* Usa flexbox para centralizar verticalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    border-radius: 4px;
+    box-shadow: 0 0 9px #ffffff;
+}
+
+
+/* Estilo para "X" */
+.cell.x {
+    color: red; /* Cor para "X" */
+}
+
+/* Estilo para "O" */
+.cell.o {
+    color: blue; /* Cor para "O" */
+}
+
+
+/* Estilo para a mensagem de resultado */
+.result {
+    font-size: 20px; /* Define o tamanho da fonte para a mensagem de resultado */
+    margin-bottom: 15px; /* Adiciona margem abaixo da mensagem de resultado */
+    font-weight: bold; /* Define o peso da fonte como negrito para a mensagem de resultado */
+    color: rgb(3, 255, 3); /* Define a cor do texto como verde */
+    box-shadow: 0 0 9px rgb(255, 255, 255);
+    background-color: #ffffff;
+    width: 110px;
+    border-radius: 8px;
+    border: #f0f0f0;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para botões */
+button {
+    padding: 10px; /* Adiciona preenchimento aos botões */
+    font-size: 16px; /* Define o tamanho da fonte para os botões */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar o mouse sobre */
+    box-shadow: 0 0 9px rgba(255, 255, 255, 0.5);
+    border-radius: 9px;
+    border: 1px solid rgba(255, 255, 255, 0.904);
+    background-color: rgb(36, 36, 36);
+    color: #f0f0f0;
+}
+
+/* Estilo para a caixa de pontuação */
+#scoreBox {
+    color: #f0f0f0;
+    background-color: rgb(36, 36, 36);
+    border: 1px solid rgba(255, 255, 255, 0.938); /* Adiciona uma borda preta de 1px à caixa de pontuação */
+    padding: 10px; /* Adiciona preenchimento dentro da caixa de pontuação */
+    margin-top: 10px; /* Adiciona margem acima da caixa de pontuação */
+    width: 120px; /* Define a largura da caixa de pontuação */
+    height: 100px; /* Define a altura da caixa de pontuação */
+    margin-left: auto; /* Centraliza a caixa de pontuação horizontalmente */
+    margin-right: auto; /* Centraliza a caixa de pontuação horizontalmente */
+    border-radius: 9%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilo para o texto de pontuação */
+#score {
+    font-size: 18px; /* Define o tamanho da fonte para o texto de pontuação */
+    
+   
+}
+
+/* Estilo para parágrafos dentro da caixa de pontuação */
+#score p {
+    margin: 5px 0; /* Adiciona margem acima e abaixo dos parágrafos dentro da caixa de pontuação */
+}
+
+/* Estilo para spans dentro da caixa de pontuação */
+#score span {
+    font-weight: bold; /* Define o peso da fonte como negrito para spans dentro da caixa de pontuação */
+    margin-left: 5px; /* Adiciona margem à esquerda dos spans dentro da caixa de pontuação */
+    color: #000000; /* Define a cor do texto como preto para spans dentro da caixa de pontuação */
+    color: #f0f0f0;
+}
+
+.o{
+    color: rgb(0, 0, 202);
+    font-weight: bold;
+}
+.x{
+    color: rgb(255, 0, 0);
+    
+}
+
+
